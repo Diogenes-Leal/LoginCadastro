@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap');
+
+.classLogo {
+    color: #e7e7e7;
+    font-size: 1.5em;
+    text-align: right;
+    height: 600px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.classLogo img {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.classLogo h2 {
+    margin-left: 80px;
+}

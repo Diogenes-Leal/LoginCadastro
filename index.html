@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudiOn</title>
+
+    <link rel="stylesheet" href="style/reset.css">
+    
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/organizacaoConteudo.css">
+    <link rel="stylesheet" href="style/formularios.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <script src="js/showHidePassword.js"></script>
+    <script src="js/changeDivs.js"></script>
+    <script src="js/ativarBotaoCadastro.js"></script>
+
+    <script src="https://kit.fontawesome.com/d8c54a5d5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="conteudoPrincipal">
+            <div class="classSelecionarAba">
+                <button class="classBtnAba" onclick="toLogin()" id="idBtnAbaLogin">Login</button>
+                <button class="classBtnAba" onclick="toCadastro()" id="idBtnAbaCadastro">Cadastro</button>
+            </div>
+            <div class="classAba" id="divLogin">
+                <input type="text" placeholder="Nome de usuário" class="classInfoDeLogin">
+                <div class="classPassword">
+                    <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Senha">
+                    <button onclick="showHide()"><i id="idShowHideLogin" class="fa-solid fa-eye"></i></button>
+                </div>
+                
+                <div class="grupoDeBotoes">
+                    <button>Esqueci minha senha</button>
+                    <button>Esqueci meu nome de usuário</button>
+                </div>
+            
+                <div>
+                    <p>Se preferir, entre com uma rede social:</p>
+                </div>
+                <div class="grupoDeBotoes">
+                    <button class="btnAcessoGoogle">G</button>
+                    <button class="btnAcesso">Entrar</button>
+                </div>
+            </div>
+
+            <div class="classAba" id="divCadastro">
+                <input type="text" placeholder="Nome completo" class="classInfoDeCadastro" onchange="enableBtnCadastrar()">
+                <input type="text" placeholder="Nome de usuário" class="classInfoDeCadastro" onchange="enableBtnCadastrar()">
+                <input type="email" name="Email" id="email" placeholder="Email" class="classInfoDeCadastro" onchange="enableBtnCadastrar()">
+                <div class="classPassword">
+                    <input type="password" name="SenhaCadastro" id="senhaCadastro" placeholder="Senha" onchange="enableBtnCadastrar()">
+                    <button onclick="showHide()"><i id="idShowHideCadastro" class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="classTermosUso">
+                    <input type="checkbox" name="TermosDeUso" id="idTermosUso" onchange="enableBtnCadastrar()">
+                    <label for="idTermosUso">Concordo com os <b>Termos de Uso</b> do StudiOn.</label>
+                </div>
+            
+                <div>
+                    <p>Se preferir entre com uma rede social:</p>
+                </div>
+                <div class="grupoDeBotoes">
+                    <button class="btnAcessoGoogle">G</button>
+                    <button class="btnAcesso" id="idBtnCadastrar" disabled>Cadastrar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="conteudoPrincipal">
+            <div class="classLogo">
+                <img src="images/logo.png" alt="">
+                <h2>Aprenda do seu jeito, onde você estiver.</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>Criado por Diógenes Leal</footer>
+</body>
+</html>

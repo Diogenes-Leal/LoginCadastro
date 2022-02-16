@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap');
+
+p {
+    color: #e7e7e7;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+}
+
+b {
+    font-weight: bold;
+}
+
+.classInfoDeCadastro, .classInfoDeLogin {
+    border: none;
+    color: #ffffff;
+    background-color: #ffffff00;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 1.8em;
+    margin: 35px 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+    outline: none;
+}
+
+::placeholder {
+    color: #cccccc;
+}
+
+.classPassword {
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    margin: 35px 0;
+}
+
+.classPassword input {
+    border: none;
+    color: #ffffff;
+    background-color: #ffffff00;
+    width: 94%;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+    outline: none;
+}
+
+.classPassword button {
+    margin: 0;
+    width: 4%;
+    color: #cccccc;
+}
+
+button {
+    background-color: #ffffff00;
+    border: none;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+}
+
+.classBtnAba {
+    border-bottom: 3px solid #04afab;
+    margin-right: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.btnAcessoGoogle {
+    color: #5c2e91;
+    font-size: 2.8em;
+    border: 1px solid #5c2e91;
+    padding: 0 15px;
+    border-radius: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.btnAcesso {
+    background-color: #5c2e91;
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-size: 1.1em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.classTermosUso {
+    margin-bottom: 40px;
+}
+
+.classTermosUso label{
+    color: #e7e7e7;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+}
+
+.classTermosUso input{
+    display: none;
+}
+
+.classTermosUso input + label:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    border: 2px solid #e7e7e7;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+.classTermosUso input:checked + label:before {
+    background-image: url('../images/verificar.svg');
+    background-color: #e7e7e7;
+}
+
+#idBtnAbaCadastro {
+    border: none;
+    opacity: 50%;
+}
+
+#idBtnCadastrar {
+    background-color: #ffffff00;
+    color: #29332448;
+    border: 2px solid #29332448;
+}

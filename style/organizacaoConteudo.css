@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoPrincipal{
+    width: 480px;
+    margin: 6% 40px;
+}
+
+.classAba {
+    width: 480px;
+}
+
+.grupoDeBotoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divCadastro {
+    display: none;
+}

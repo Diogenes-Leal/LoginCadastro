@@ -1,0 +1,15 @@
+Degradê do fundo
+Azul escuro - 330857
+Azul claro - 04afab
+Branco - f6fcfc
+
+Botões
+5c2e91
+
+Texto
+Letras - ffffff
+Letras - 90a4b9
+Underline - 01aeaa
+
+Input
+Linha do input - 01aeaa
